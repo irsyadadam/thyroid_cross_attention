@@ -20,11 +20,9 @@ Dataset is stored in h5ad containing the raw thyroid cine frames and their respe
 
 ### Install Env:
 
-<code>
-conda create -n MMCA_simul python=3.11
+    conda create -n MMCA_simul python=3.11
 
-bash INSTALL_ENV.sh
-</code>
+    bash INSTALL_ENV.sh
 
 Dependencies: 
 - python = 3.11
@@ -46,24 +44,23 @@ Dependencies:
 
 Model weights are saved in their respective folders. To evaluate model using each module, run the following:
 
-<code>
-##EXAMPLE CODE
-    
-#evaluate msunet + classifier on fold 0
-python3 main.py --MSUNET --FOLD 0
+    ##EXAMPLE CODE
+        
+    #evaluate msunet + classifier on fold 0
+    python3 main.py --MSUNET --FOLD 0
 
-#evaluate vision_transformer + classifier on fold 0
-python3 main.py --VIT --FOLD 0
+    #evaluate vision_transformer + classifier on fold 0
+    python3 main.py --VIT --FOLD 0
 
-#(FULL BACKBONE) evaluate vision_transformer + msunet + classifier on fold 0
-python3 main.py --JOINTFUSION --FOLD 0
+    #(FULL BACKBONE) evaluate vision_transformer + msunet + classifier on fold 0
+    python3 main.py --JOINTFUSION --FOLD 0
 
-#evaluate msunet + mmca
-python3 main.py --MSUNET --MMCA --FOLD 0
+    #evaluate msunet + mmca
+    python3 main.py --MSUNET --MMCA --FOLD 0
 
-#evaluate vision_transformer + mmca on fold 0
-python3 main.py --VIT --MMCA --FOLD 0
+    #evaluate vision_transformer + mmca on fold 0
+    python3 main.py --VIT --MMCA --FOLD 0
 
-#(FULL MODEL) evaluate vision_transformer + msunet + mmca on fold 0
-python3 main.py --JOINTFUSION --MMCA --FOLD 0
-</code>
+    #(FULL MODEL) evaluate vision_transformer + msunet + mmca on fold 0
+    python3 main.py --JOINTFUSION --MMCA --FOLD 0
+
