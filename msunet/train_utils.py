@@ -11,6 +11,9 @@ from torchvision import transforms
 from tqdm import tqdm
 from datetime import datetime
 
+################################################################
+#TAKEN FROM MSUNET UCLA PAPER WILLIAM SPEIER
+
 class SegmentationDataset(Dataset):
     def __init__(self, map, targetSize = None):
         self.map = pd.read_csv(map, index_col=0)
@@ -278,10 +281,12 @@ def training(model, dataloader, optimizer, criterion, scheduler, test_loader, de
             if flip == 1:
                 torch.save(model.state_dict(), f'{model_file_ext}_v1.pth')
                 model_version = "model v1"
+                print("Model v1 saved.")
                 flip = 2
             else:
                 torch.save(model.state_dict(), f'{model_file_ext}_v2.pth')
                 model_version = "model v2"
+                print("Model v2 saved.")
                 flip = 1
             save = True
 
@@ -294,9 +299,11 @@ def training(model, dataloader, optimizer, criterion, scheduler, test_loader, de
         now = datetime.now()
         formatted_date = now.strftime("%m-%d %H:%M:%S")
         print(f"Epoch {epoch+1}, Train Loss: {epoch_loss:.6f}, Test Loss: {teLoss:.6f}, TrainDICE: {trDICE:.6f}, TestDICE: {teDICE:.6f}")
-        with open("logs/logs.txt", "a") as f:
+        with open("logs/FOLD_%s_log.txt" % FOLD_NUM, "a") as f:
             f.write(f"TIMESTAMP: {formatted_date}, Epoch {epoch+1}, Train Loss: {epoch_loss:.6f}, Test Loss: {teLoss:.6f}, TrainDICE: {trDICE:.6f}, TestDICE: {teDICE:.6f}\n")
-            if save: f.write("{model_version} saved.\n")
+            if save: 
+                print(f"{model_version} saved.")
+                f.write(f"{model_version} saved.\n")
 
         trainLoss.append(epoch_loss)
         trainDICE.append(trDICE)

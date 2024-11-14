@@ -51,45 +51,38 @@ class SegmentationDataset(Dataset):
         self.transform = transforms.Compose([transforms.ToTensor()])
         self.targetSize = target_size
 
-        #1. empty init data
-        self.images = []
-        self.masks = []
-        
-        #2. split data accordingly
+        #get targets, only retrieve when getting __getitem__ is called
         self.phase = phase
-        self.train_test_split(TARGET_FOLD, h5_data, labels_df)
-    
+        self.target_index = self.get_targets(TARGET_FOLD, h5_data, labels_df)
+
+
+        #no copy, only pointer to dataset
+        self.h5_data = h5_data
+
 
     def __len__(self):
-        return len(self.images)
+        return len(self.target_index)
 
     def __getitem__(self, idx):
-        image = processImage(self.images[idx], self.targetSize)
-        mask = processImage(self.masks[idx], self.targetSize)
+        target = self.target_index[idx]
+        image = processImage(self.h5_data["image"][target], self.targetSize)
+        mask = processImage(self.h5_data["mask"][target], self.targetSize)
 
         image = self.transform(image)
         mask = self.transform(mask)
 
         return image, mask
         
-    def train_test_split(self, TARGET_FOLD, h5_data, labels_df): 
+    def get_targets(self, TARGET_FOLD, h5_data, labels_df): 
         if self.phase in ["train", "TRAIN", "Train"]:
             target_index = labels_df[labels_df["foldNum"] != TARGET_FOLD].index.to_list()
 
         elif self.phase in ["test", "TEST", "Test"]:
             target_index = labels_df[labels_df["foldNum"] == TARGET_FOLD].index.to_list()
         
-        for i in tqdm(range(len(h5_data["image"])), desc = "Splitting FOLD %s for %s" % (TARGET_FOLD, self.phase)):
-            if i in target_index:
-                self.images.append(h5_data["image"][i])
-            else:
-                self.masks.append(h5_data["mask"][i])
+        return target_index
 
-        self.images = np.array(self.images)
-        self.masks = np.array(self.masks)
-        
-
-def processImage(image: np.array, targetSize: tuple = (512,512)):
+def processImage(npImg: np.array, targetSize: tuple = (512,512)):
     r"""
         Processes a grayscale image stored as a NumPy .npy file, performs scaling, type conversion, 
         resizing, and cropping/padding to return a square PIL image of specified target size.

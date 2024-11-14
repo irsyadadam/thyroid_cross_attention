@@ -1,0 +1,101 @@
+Training logs
+TIMESTAMP: 11-07 19:37:53, Epoch 1, Train Loss: 0.393041, Test Loss: 0.770177, TrainDICE: 0.392843, TestDICE: 0.388832
+model v1 saved.
+TIMESTAMP: 11-07 20:09:36, Epoch 2, Train Loss: 0.284587, Test Loss: 0.275928, TrainDICE: 0.754852, TestDICE: 0.723163
+model v2 saved.
+TIMESTAMP: 11-07 20:41:19, Epoch 3, Train Loss: 0.226732, Test Loss: 0.299362, TrainDICE: 0.804225, TestDICE: 0.750984
+model v1 saved.
+TIMESTAMP: 11-07 21:13:02, Epoch 4, Train Loss: 0.187920, Test Loss: 0.264061, TrainDICE: 0.816151, TestDICE: 0.746696
+model v2 saved.
+TIMESTAMP: 11-07 21:44:45, Epoch 5, Train Loss: 0.161976, Test Loss: 0.289290, TrainDICE: 0.834897, TestDICE: 0.751687
+model v1 saved.
+TIMESTAMP: 11-07 22:16:28, Epoch 6, Train Loss: 0.142357, Test Loss: 0.324751, TrainDICE: 0.859932, TestDICE: 0.740486
+model v2 saved.
+TIMESTAMP: 11-07 22:48:11, Epoch 7, Train Loss: 0.126522, Test Loss: 0.305672, TrainDICE: 0.860316, TestDICE: 0.742194
+model v1 saved.
+TIMESTAMP: 11-07 23:19:54, Epoch 8, Train Loss: 0.113801, Test Loss: 0.319296, TrainDICE: 0.880894, TestDICE: 0.752687
+model v2 saved.
+TIMESTAMP: 11-07 23:51:37, Epoch 9, Train Loss: 0.104278, Test Loss: 0.269000, TrainDICE: 0.857747, TestDICE: 0.742313
+model v1 saved.
+TIMESTAMP: 11-08 00:23:20, Epoch 10, Train Loss: 0.093897, Test Loss: 0.372832, TrainDICE: 0.897198, TestDICE: 0.752948
+model v2 saved.
+TIMESTAMP: 11-08 00:55:03, Epoch 11, Train Loss: 0.087540, Test Loss: 0.280169, TrainDICE: 0.872717, TestDICE: 0.743113
+model v1 saved.
+TIMESTAMP: 11-08 01:26:45, Epoch 12, Train Loss: 0.080335, Test Loss: 0.334323, TrainDICE: 0.907248, TestDICE: 0.737306
+model v2 saved.
+TIMESTAMP: 11-08 01:58:28, Epoch 13, Train Loss: 0.074945, Test Loss: 0.334799, TrainDICE: 0.910677, TestDICE: 0.745894
+model v1 saved.
+TIMESTAMP: 11-08 02:30:11, Epoch 14, Train Loss: 0.070057, Test Loss: 0.391303, TrainDICE: 0.926124, TestDICE: 0.748218
+model v2 saved.
+TIMESTAMP: 11-08 03:01:54, Epoch 15, Train Loss: 0.066410, Test Loss: 0.508766, TrainDICE: 0.930994, TestDICE: 0.721274
+model v1 saved.
+TIMESTAMP: 11-08 03:33:37, Epoch 16, Train Loss: 0.062434, Test Loss: 0.382904, TrainDICE: 0.932793, TestDICE: 0.740923
+model v2 saved.
+TIMESTAMP: 11-08 04:05:20, Epoch 17, Train Loss: 0.058532, Test Loss: 0.460255, TrainDICE: 0.929032, TestDICE: 0.742858
+model v1 saved.
+TIMESTAMP: 11-08 04:37:03, Epoch 18, Train Loss: 0.055612, Test Loss: 0.350542, TrainDICE: 0.905444, TestDICE: 0.746501
+model v2 saved.
+TIMESTAMP: 11-08 05:08:46, Epoch 19, Train Loss: 0.052804, Test Loss: 0.437041, TrainDICE: 0.935787, TestDICE: 0.744580
+model v1 saved.
+TIMESTAMP: 11-08 05:40:29, Epoch 20, Train Loss: 0.050607, Test Loss: 0.344829, TrainDICE: 0.922339, TestDICE: 0.755933
+model v2 saved.
+TIMESTAMP: 11-08 06:12:11, Epoch 21, Train Loss: 0.048518, Test Loss: 0.478596, TrainDICE: 0.945793, TestDICE: 0.751109
+model v1 saved.
+TIMESTAMP: 11-08 06:43:54, Epoch 22, Train Loss: 0.046296, Test Loss: 0.492170, TrainDICE: 0.942143, TestDICE: 0.745007
+model v2 saved.
+TIMESTAMP: 11-08 07:15:37, Epoch 23, Train Loss: 0.044453, Test Loss: 0.358303, TrainDICE: 0.933289, TestDICE: 0.756896
+model v1 saved.
+TIMESTAMP: 11-08 07:47:20, Epoch 24, Train Loss: 0.042796, Test Loss: 0.456106, TrainDICE: 0.943395, TestDICE: 0.737783
+model v2 saved.
+TIMESTAMP: 11-08 08:19:02, Epoch 25, Train Loss: 0.041172, Test Loss: 0.510009, TrainDICE: 0.951027, TestDICE: 0.746788
+model v1 saved.
+TIMESTAMP: 11-08 08:50:45, Epoch 26, Train Loss: 0.039788, Test Loss: 0.370384, TrainDICE: 0.935506, TestDICE: 0.753189
+model v2 saved.
+TIMESTAMP: 11-08 09:22:28, Epoch 27, Train Loss: 0.038509, Test Loss: 0.415609, TrainDICE: 0.949301, TestDICE: 0.750493
+model v1 saved.
+TIMESTAMP: 11-08 09:54:11, Epoch 28, Train Loss: 0.036980, Test Loss: 0.412039, TrainDICE: 0.945052, TestDICE: 0.756228
+model v2 saved.
+TIMESTAMP: 11-08 10:25:54, Epoch 29, Train Loss: 0.035914, Test Loss: 0.437805, TrainDICE: 0.954204, TestDICE: 0.759909
+model v1 saved.
+TIMESTAMP: 11-08 10:57:55, Epoch 30, Train Loss: 0.034962, Test Loss: 0.556846, TrainDICE: 0.959303, TestDICE: 0.749587
+model v2 saved.
+TIMESTAMP: 11-08 11:29:53, Epoch 31, Train Loss: 0.033552, Test Loss: 0.561438, TrainDICE: 0.952948, TestDICE: 0.736078
+model v1 saved.
+TIMESTAMP: 11-08 12:01:39, Epoch 32, Train Loss: 0.032587, Test Loss: 0.534007, TrainDICE: 0.956171, TestDICE: 0.748206
+model v2 saved.
+TIMESTAMP: 11-08 12:33:24, Epoch 33, Train Loss: 0.031881, Test Loss: 0.433509, TrainDICE: 0.950372, TestDICE: 0.755356
+model v1 saved.
+TIMESTAMP: 11-08 13:05:09, Epoch 34, Train Loss: 0.030864, Test Loss: 0.418314, TrainDICE: 0.957269, TestDICE: 0.753519
+model v2 saved.
+TIMESTAMP: 11-08 13:36:54, Epoch 35, Train Loss: 0.030052, Test Loss: 0.481427, TrainDICE: 0.956598, TestDICE: 0.750380
+model v1 saved.
+TIMESTAMP: 11-08 14:09:29, Epoch 36, Train Loss: 0.029019, Test Loss: 0.524534, TrainDICE: 0.962058, TestDICE: 0.733272
+model v2 saved.
+TIMESTAMP: 11-08 14:42:57, Epoch 37, Train Loss: 0.028474, Test Loss: 0.625004, TrainDICE: 0.964103, TestDICE: 0.744154
+model v1 saved.
+TIMESTAMP: 11-08 15:15:44, Epoch 38, Train Loss: 0.027661, Test Loss: 0.508369, TrainDICE: 0.950088, TestDICE: 0.753928
+model v2 saved.
+TIMESTAMP: 11-08 15:48:19, Epoch 39, Train Loss: 0.027038, Test Loss: 0.669192, TrainDICE: 0.960629, TestDICE: 0.742240
+model v1 saved.
+TIMESTAMP: 11-08 16:20:02, Epoch 40, Train Loss: 0.026672, Test Loss: 0.545987, TrainDICE: 0.958798, TestDICE: 0.748015
+model v2 saved.
+TIMESTAMP: 11-08 16:51:45, Epoch 41, Train Loss: 0.025766, Test Loss: 0.422779, TrainDICE: 0.946606, TestDICE: 0.758746
+model v1 saved.
+TIMESTAMP: 11-08 17:23:27, Epoch 42, Train Loss: 0.025469, Test Loss: 0.525364, TrainDICE: 0.956801, TestDICE: 0.751674
+model v2 saved.
+TIMESTAMP: 11-08 17:55:09, Epoch 43, Train Loss: 0.024739, Test Loss: 0.508427, TrainDICE: 0.958492, TestDICE: 0.755164
+model v1 saved.
+TIMESTAMP: 11-08 18:26:51, Epoch 44, Train Loss: 0.023941, Test Loss: 0.464045, TrainDICE: 0.956896, TestDICE: 0.755785
+model v2 saved.
+TIMESTAMP: 11-08 18:58:32, Epoch 45, Train Loss: 0.023452, Test Loss: 0.468273, TrainDICE: 0.961067, TestDICE: 0.751322
+model v1 saved.
+TIMESTAMP: 11-08 19:30:14, Epoch 46, Train Loss: 0.022995, Test Loss: 0.446137, TrainDICE: 0.953857, TestDICE: 0.759148
+model v2 saved.
+TIMESTAMP: 11-08 20:01:56, Epoch 47, Train Loss: 0.022662, Test Loss: 0.508201, TrainDICE: 0.956454, TestDICE: 0.754192
+model v1 saved.
+TIMESTAMP: 11-08 20:33:38, Epoch 48, Train Loss: 0.022144, Test Loss: 0.579049, TrainDICE: 0.968093, TestDICE: 0.748648
+model v2 saved.
+TIMESTAMP: 11-08 21:05:19, Epoch 49, Train Loss: 0.021698, Test Loss: 0.653734, TrainDICE: 0.964501, TestDICE: 0.754421
+model v1 saved.
+TIMESTAMP: 11-08 21:37:01, Epoch 50, Train Loss: 0.021247, Test Loss: 0.621156, TrainDICE: 0.967093, TestDICE: 0.752935
+model v2 saved.
